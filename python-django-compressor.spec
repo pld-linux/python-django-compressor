@@ -61,11 +61,16 @@ or CSS in a Django templates into cacheable static files.
 rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %py_install
+%{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/compressor/tests
+%{__rm} $RPM_BUILD_ROOT%{py_sitescriptdir}/compressor/test_*.py*
 %py_postclean
 %endif
 
 %if %{with python3}
 %py3_install
+%{__rm} -r $RPM_BUILD_ROOT%{py3_sitescriptdir}/compressor/tests
+%{__rm} -r $RPM_BUILD_ROOT%{py3_sitescriptdir}/compressor/__pycache__/test_*.pyc
+%{__rm} -r $RPM_BUILD_ROOT%{py3_sitescriptdir}/compressor/test_*.py
 %endif
 
 %clean
