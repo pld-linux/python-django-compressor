@@ -30,7 +30,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Django Compressor combines and compresses linked and inline Javascript
+Django Compressor combines and compresses linked and inline JavaScript
 or CSS in a Django templates into cacheable static files.
 
 %package -n python3-django-compressor
@@ -38,7 +38,7 @@ Summary:	Compresses linked and inline JavaScript or CSS into single cached files
 Group:		Libraries/Python
 
 %description -n python3-django-compressor
-Django Compressor combines and compresses linked and inline Javascript
+Django Compressor combines and compresses linked and inline JavaScript
 or CSS in a Django templates into cacheable static files.
 
 %prep
