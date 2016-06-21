@@ -26,7 +26,6 @@ BuildRequires:	python-setuptools
 BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
 %endif
-Requires:	python-django
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +36,6 @@ or CSS in a Django templates into cacheable static files.
 %package -n python3-django-compressor
 Summary:	Compresses linked and inline JavaScript or CSS into single cached files
 Group:		Libraries/Python
-Requires:	python3-django
 
 %description -n python3-django-compressor
 Django Compressor combines and compresses linked and inline Javascript
