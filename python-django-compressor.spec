@@ -27,9 +27,6 @@ BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
 %endif
 Requires:	python-django
-Requires:	python-django-appconf >= 0.4
-Requires:	python-rcssmin
-Requires:	python-rjsmin
 Requires:	python-versiontools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,9 +39,6 @@ or CSS in a Django templates into cacheable static files.
 Summary:	Compresses linked and inline JavaScript or CSS into single cached files
 Group:		Libraries/Python
 Requires:	python3-django
-Requires:	python3-django-appconf
-Requires:	python3-rcssmin
-Requires:	python3-rjsmin
 Requires:	python3-versiontools
 
 %description -n python3-django-compressor
