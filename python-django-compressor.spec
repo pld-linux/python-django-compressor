@@ -9,13 +9,13 @@
 %define 	module	django-compressor
 Summary:	Compresses linked and inline JavaScript or CSS into single cached files
 Name:		python-%{module}
-Version:	2.0
+Version:	2.1
 Release:	1
 License:	MIT
 Group:		Libraries/Python
-Source0:	http://pypi.python.org/packages/source/d/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
-# Source0-md5:	98254da44f1676d7b871ffeb14115175
-URL:		http://pypi.python.org/pypi/django_compressor/2.0
+Source0:	https://files.pythonhosted.org/packages/source/d/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+# Source0-md5:	21ecfe4e8615eae64f7068a5599df9af
+URL:		http://django-compressor.readthedocs.io/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
