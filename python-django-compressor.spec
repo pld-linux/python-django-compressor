@@ -10,7 +10,7 @@
 Summary:	Compresses linked and inline JavaScript or CSS into single cached files
 Name:		python-%{module}
 Version:	2.1.1
-Release:	7
+Release:	8
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/d/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
